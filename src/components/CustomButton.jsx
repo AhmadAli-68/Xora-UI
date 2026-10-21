@@ -24,7 +24,7 @@ const Inner = ({ icon, children, markerFill }) => (
   </>
 )
 
-const Button = ({ children, href, containerClassName, onCLick }) => {
+const CustomButton = ({ icon, children, href, containerClassName, onCLick }) => {
 
   return href ? (
     <a className={clsx(
@@ -32,22 +32,21 @@ const Button = ({ children, href, containerClassName, onCLick }) => {
     )}
       href={href}
     >
-      <Inner icon='/images/zap.svg'>
+      <Inner icon={icon}>
         {children}
       </Inner>
     </a>
+  ) : (
+    <button className={clsx(
+      'relative p-0.5 g5 rounded-2xl shadow-500 group', containerClassName
+    )}
+      onClick={onCLick}
+    >
+      <Inner icon={icon}>
+        {children}
+      </Inner>
+    </button>
   )
-    : (
-      <button className={clsx(
-        'relative p-0.5 g5 rounded-2xl shadow-500 group', containerClassName
-      )}
-        onClick={onCLick}
-      >
-        <Inner icon='/images/zap.svg'>
-          {children}
-        </Inner>
-      </button>
-    )
 }
 
-export default Button
+export default CustomButton

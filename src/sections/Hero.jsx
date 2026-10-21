@@ -1,5 +1,5 @@
 import { Element, Link } from 'react-scroll'
-import Button from '../components/Button'
+import CustomButton from '../components/CustomButton'
 
 const Hero = () => {
   return (
@@ -25,11 +25,12 @@ const Hero = () => {
               spy={true}
               smooth={true}
             >
-              <Button
+              <CustomButton
+                icon='/images/zap.svg'
                 containerClassName='flex flex-1 item-center justify-center'
               >
                 Try it now
-              </Button>
+              </CustomButton>
             </Link>
           </div>
 
