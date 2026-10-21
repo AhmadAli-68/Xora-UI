@@ -1,4 +1,4 @@
-import { Link as ScrollLink } from 'react-scroll'
+import { Link } from 'react-scroll'
 import NavLink from '../components/NavLink'
 import { useState } from 'react';
 import clsx from 'clsx';
@@ -33,11 +33,11 @@ const Header = () => {
                   <NavLink title='pricing' />
                 </li>
                 <li className='nav-logo'>
-                  <ScrollLink
+                  <Link
                     to='hero'
                     offset={-100}
-                    spy
-                    smooth
+                    spy={true}
+                    smooth={true}
                     className={clsx('max-lg:hidden transition-transform duration-500 cursor-pointer')}
                   >
                     <img
@@ -46,7 +46,7 @@ const Header = () => {
                       height={55}
                       alt='logo'
                     />
-                  </ScrollLink>
+                  </Link>
                 </li>
                 <li className='nav-li'>
                   <NavLink title='faq' />

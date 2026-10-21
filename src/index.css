@@ -262,14 +262,14 @@
 /* START of Hero */
 
 .hero-img_res {
-  @apply max-lg:-top-40 max-lg:left-[calc(50%-280px)] max-lg:w-290 max-md:bottom-147.5 max-md:left-[calc(50%-390px)] max-md:top-auto;
+  @apply max-lg:-top-40 max-lg:left-[calc(50%-280px)] max-lg:w-290 max-md:-bottom-147.5 max-md:left-[calc(50%-390px)] max-md:top-auto;
 }
 
 /* END of Hero */
 
 /*START of Custom Button*/
 
-.inner-before {
+@utility inner-before {
   @apply before:g7 before:absolute before:inset-0 before:opacity-0 before:transition-opacity before:duration-500 before:content-[''];
 }
 
