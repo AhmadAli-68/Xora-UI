@@ -57,7 +57,7 @@ const Header = () => {
                 <li className='nav-logo'>
                   <Link
                     to='hero'
-                    offset={-200}
+                    offset={-250}
                     spy={true}
                     smooth={true}
                     className={clsx('max-lg:hidden transition-transform duration-500 cursor-pointer')}
