@@ -21,8 +21,7 @@ const Header = () => {
     <header className={clsx(
       'fixed top-0 left-0 z-50 w-full transition-all duration-500',
       HasScrolled ? 'py-2 bg-black-100 backdrop-blur-3xl' : 'max-lg:py-4 py-10'
-    )}
-    >
+    )}>
       <div className='container h-14 flex items-center max-lg:px-5'>
         <Link
           to='hero'
@@ -44,8 +43,8 @@ const Header = () => {
           className={clsx('w-full max-lg:fixed max-lg:top-0 max-lg:left-0 max-lg:w-full max-lg:bg-s2 max-lg:opacity-0',
             IsOpen
               ? 'max-lg:opacity-100'
-              : 'max-lg:pointer-events-none')}
-        >
+              : 'max-lg:pointer-events-none'
+          )}>
           <div className='max-lg:relative max-lg:flex max-lg:flex-col max-lg:min-h-screen max-lg:p-6 max-lg:overflow-hidden sidebar-before max-md:px-4'>
             <nav className='max-lg:relative max-lg:z-2 max-lg:my-auto'>
               <ul className='flex max-lg:block max-lg:px-12'>
