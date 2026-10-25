@@ -13,11 +13,9 @@ const Testimonials = () => {
             <p className='caption mb-5 max-md:mb-2.5'>
               Wall of Love
             </p>
-            <h3 className='h3 max-md:h5 text-p4 mb-3 max-lg:mb-0'>
+            <h3 className='h3 max-md:h5 text-p4'>
               Words from our fans
             </h3>
-
-            <div className='opacity-0 group-hover:opacity-100 h-0.75 w-full bg-p1 transition-all duration-500 max-lg:hidden' />
           </div>
 
           <div className='testimonials_inner-before testimonials_inner-after relative -my-12 mr-3 flex items-start max-lg:static max-md:block'>
