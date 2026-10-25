@@ -8,8 +8,6 @@ import CustomButton from '../components/CustomButton';
 const Pricing = () => {
   const [Monthly, setMonthly] = useState(false);
 
-  console.log(CountUp)
-
   return (
     <section>
       <Element name='pricing'>

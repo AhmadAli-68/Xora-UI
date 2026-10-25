@@ -9,7 +9,7 @@ const Testimonials = () => {
     <section className='relative z-2 py-24 md:py-28 lg:py-40'>
       <Element name='testimonials'>
         <div className='container block lg:flex'>
-          <div className='group testimonials_head-res relative z-2 mr-20 flex-300 select-none'>
+          <div className='testimonials_head-res relative z-2 mr-20 flex-300 self-start select-none'>
             <p className='caption mb-5 max-md:mb-2.5'>
               Wall of Love
             </p>
@@ -18,7 +18,7 @@ const Testimonials = () => {
             </h3>
           </div>
 
-          <div className='testimonials_inner-before testimonials_inner-after relative -my-12 mr-3 flex items-start max-lg:static max-md:block'>
+          <div className='testimonials_inner-before testimonials_inner-after relative -my-12 -mr-3 flex items-start max-lg:static max-md:block'>
             <div className='testimonials_group-after flex-50'>
               {testimonials.slice(0, halfTestimonialsLength).map((testimonial) => (
                 <TestimonialItem
